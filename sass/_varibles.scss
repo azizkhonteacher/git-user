@@ -1,0 +1,27 @@
+// light 
+
+$card-bg: #FEFEFE;
+$bg-color: #F6F8FF;
+$input-text: #4B6A9B;
+$input-btn-bg: #0079FF;
+$input-btn-color: #ffffff;
+
+:root{
+    --html-bg: #F6F8FF;
+    --logo-title: #222731;
+    --header-btn: #697C9A;
+    --header-btn-icon: url("../images/svg/moon.svg") center/contain no-repeat;
+    --search-input-drop-shadow: 0px 16px 30px -10px #4660BB33;
+    --search-input-bg: #FFFFFF;
+    --search__bloc-input: #4B6A9B;
+}
+// dark
+.dark{
+    --html-bg: #141D2F;
+    --logo-title: #FFFFFF;
+    --header-btn: #FFFFFF;
+    --header-btn-icon: url("../images/svg/sun.svg") center/contain no-repeat;
+    --search-input-drop-shadow: none;
+    --search-input-bg: #1E2A47;
+    --search__bloc-input: #FFFFFF;
+}

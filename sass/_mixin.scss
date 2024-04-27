@@ -1,0 +1,6 @@
+@mixin font($fw, $fz, $lh:1){
+    font-family: "Space Mono", sans-serif;
+    font-weight: $fw;
+    font-size: $fz + px;
+    line-height: $lh;
+}

@@ -1,13 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>User github</title>
     <!-- STYLE'S -->
-    <link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="./index.html" class="logo__title">devfinder</a>
+        </div>
+
+        <div class="temp__wrap">
+          <button class="temp__wrap-btn" id="t-b">
+            <p class="temp__wrap-btn-text" id="t-b-p">DARK</p>
+            <span class="temp__wrap-btn-icon"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="search__bloc">
+        <div class="container">
+          <form class="search__bloc-form" id="search__bloc-form">
+            <input
+              type="text"
+              class="search__bloc-form-input"
+              id="form-input"
+              placeholder="Search GitHub username…"
+            />
+            <div class="search__bloc-form-icon">
+              <img src="./images/svg/lupa.svg" alt="search__bloc-form-icon" />
+            </div>
+            <button class="search__bloc-form-btn" type="button" id="fotm-btn">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+
+
+    <script src="./js/app.js"></script>
+  </body>
 </html>
