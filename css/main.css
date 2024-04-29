@@ -146,9 +146,11 @@ main .search__bloc-form-input {
   line-height: 1.5;
   color: var(--search__bloc-input);
 }
-main .search__bloc-form-input:focus {
+main .search__bloc-form-input:focus, main .search__bloc-form-input:active {
   border: none;
   outline: none;
+  background-color: var(--search-input-bg);
+  color: var(--search__bloc-input);
 }
 main .search__bloc-form-input::-moz-placeholder {
   font-family: "Space Mono", sans-serif;
@@ -184,12 +186,12 @@ main .search__bloc-form-btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #0079FF;
+  background-color: #0079ff;
   padding: 12px 24px;
   border-radius: 4px;
   cursor: pointer;
   border: none;
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: "Space Mono", sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -199,7 +201,7 @@ main .search__bloc-form-btn {
   transform: translateY(-50%);
 }
 main .search__bloc-form .no {
-  color: #F74646;
+  color: #f74646;
   font-family: "Space Mono", sans-serif;
   font-weight: 700;
   font-size: 15px;
@@ -264,7 +266,7 @@ main .user__info-desc-hero .user__email {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #0079FF;
+  color: #0079ff;
   padding: 2px 0 20px;
 }
 main .user__info-desc-hero .user__bio {

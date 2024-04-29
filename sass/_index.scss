@@ -72,20 +72,22 @@ main {
         background-color: var(--search-input-bg);
         border-radius: 6px;
         padding: 22px 120px 22px 80px;
-        
+
         @include font(400, 18, 1.5);
         color: var(--search__bloc-input);
 
-        &:focus {
+        &:focus, &:active {
           border: none;
           outline: none;
+          background-color: var(--search-input-bg);
+          color: var(--search__bloc-input);
         }
         &::placeholder {
           @include font(400, 18, 1.5);
           color: var(--search__bloc-input);
         }
       }
-      &-icon{
+      &-icon {
         display: flex;
         position: absolute;
         width: 24px;
@@ -93,33 +95,32 @@ main {
         flex-shrink: 0;
         top: 23px;
         left: 32px;
-        img{
+        img {
           width: 100%;
           height: 100%;
           object-fit: contain;
         }
       }
-      &-btn{
+      &-btn {
         position: absolute;
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: #0079FF;
+        background-color: #0079ff;
         padding: 12px 24px;
         border-radius: 4px;
         cursor: pointer;
         border: none;
 
-        color: #FFFFFF;
+        color: #ffffff;
         @include font(700, 16, 1.5);
 
         right: 10px;
         top: 50%;
         transform: translateY(-50%);
-
       }
-      .no{
-        color: #F74646;
+      .no {
+        color: #f74646;
         @include font(700, 15, 1.5);
         display: none;
         position: absolute;
@@ -130,8 +131,8 @@ main {
     }
   }
 
-  .user__info{
-    .card{
+  .user__info {
+    .card {
       display: flex;
       align-items: start;
       gap: 37px;
@@ -140,12 +141,12 @@ main {
       border-radius: 6px;
       box-shadow: var(--user-info-drop-shadov);
     }
-    &-avatar{
+    &-avatar {
       width: 117px;
       height: 117px;
       // overflow: hidden;
       flex-shrink: 0;
-      img{
+      img {
         border-radius: 50%;
         width: 100%;
         height: 100%;
@@ -153,38 +154,38 @@ main {
       }
     }
 
-    &-desc{
+    &-desc {
       display: flex;
       flex-direction: column;
       width: 100%;
-      &-hero{
+      &-hero {
         display: flex;
         flex-direction: column;
-        .user{
+        .user {
           display: flex;
           align-items: center;
           justify-content: space-between;
-          &__name{
+          &__name {
             @include font(700, 26, 1.5);
             color: var(--user-name);
           }
-          &__date{
+          &__date {
             @include font(400, 15, 1.5);
             color: var(--user-date);
           }
         }
-        .user__email{
+        .user__email {
           @include font(400, 16, 1.5);
-          color: #0079FF;
+          color: #0079ff;
           padding: 2px 0 20px;
         }
-        .user__bio{
+        .user__bio {
           @include font(400, 15, 1.5);
           color: var(--user-bio);
         }
       }
 
-      &-posts{
+      &-posts {
         width: 100%;
         padding: 15px 83px 17px 32px;
         border-radius: 6px;
@@ -197,18 +198,18 @@ main {
         align-items: start;
         justify-content: space-between;
 
-        ul{
+        ul {
           display: flex;
           flex-direction: column;
           gap: 1px;
           align-items: start;
           justify-content: center;
-          li{
-            .post-name{
+          li {
+            .post-name {
               @include font(400, 13, 1.5);
               color: var(--search__bloc-input);
             }
-            .post-num{
+            .post-num {
               @include font(700, 22, 1.5);
               color: var(--user-name);
             }
@@ -216,29 +217,29 @@ main {
         }
       }
 
-      &-link{
+      &-link {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         row-gap: 19px;
         column-gap: 62px;
         width: 100%;
-        
+
         // display: flex;
         // justify-content: space-between;
         // align-items: center;
 
-        .user__info-desc-link-text{
+        .user__info-desc-link-text {
           @include font(400, 15, 1.5);
           color: var(--user-bio);
         }
 
-        .location{
+        .location {
           display: flex;
           align-items: center;
           justify-content: space-between;
           width: fit-content;
           gap: 16px;
-          &__icon{
+          &__icon {
             display: flex;
             width: 20px;
             height: 20px;
@@ -248,13 +249,13 @@ main {
           }
         }
 
-        .url{
+        .url {
           display: flex;
           align-items: center;
           justify-content: space-between;
           width: fit-content;
           gap: 16px;
-          &__icon{
+          &__icon {
             display: flex;
             width: 20px;
             height: 20px;
@@ -264,13 +265,13 @@ main {
           }
         }
 
-        .twitter{
+        .twitter {
           display: flex;
           align-items: center;
           justify-content: space-between;
           width: fit-content;
           gap: 16px;
-          &__icon{
+          &__icon {
             display: flex;
             width: 20px;
             height: 20px;
@@ -280,13 +281,13 @@ main {
           }
         }
 
-        .office-builder{
+        .office-builder {
           display: flex;
           align-items: center;
           justify-content: space-between;
           width: fit-content;
           gap: 16px;
-          &__icon{
+          &__icon {
             display: flex;
             width: 20px;
             height: 20px;
