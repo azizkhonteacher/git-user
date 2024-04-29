@@ -14,6 +14,15 @@ $input-btn-color: #ffffff;
     --search-input-drop-shadow: 0px 16px 30px -10px #4660BB33;
     --search-input-bg: #FFFFFF;
     --search__bloc-input: #4B6A9B;
+    --user-name: #2B3442;
+    --user-date: #697C9A;
+    --user-bio: #4B6A9B;
+    --user-info-drop-shadov: 0px 16px 30px -10px #4660BB33;
+    --user__info-desc-posts: #F6F8FF;
+    --location__icon: url("../images/svg/location.svg") center/contain no-repeat;
+    --url__icon: url("../images/svg/url.svg") center/contain no-repeat;
+    --twitter__icon: url("../images/svg/twitter.svg") center/contain no-repeat;
+    --office-builder__icon: url("../images/svg/office-building.svg") center/contain no-repeat;
 }
 // dark
 .dark{
@@ -24,4 +33,13 @@ $input-btn-color: #ffffff;
     --search-input-drop-shadow: none;
     --search-input-bg: #1E2A47;
     --search__bloc-input: #FFFFFF;
+    --user-name: #FFFFFF;
+    --user-date: #FFFFFF;
+    --user-bio: #FFFFFF;
+    --user-info-drop-shadov: none;
+    --user__info-desc-posts: #141D2F;
+    --location__icon: url("../images/svg/location-dark.svg") center/contain no-repeat;
+    --url__icon: url("../images/svg/url-dark.svg") center/contain no-repeat;
+    --twitter__icon: url("../images/svg/twitter-dark.svg") center/contain no-repeat;
+    --office-builder__icon: url("../images/svg/office-building-dark.svg") center/contain no-repeat;
 }
