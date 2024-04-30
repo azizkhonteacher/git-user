@@ -1,5 +1,52 @@
-@include media(775px){
-    .container{
-        max-width: 573px;
+@include media(575px) {
+  .container {
+    max-width: 575px;
+  }
+  .site__search {
+    .input-err {
+      top: 120%;
+      left: 10px;
+      transform: translateY(0);
+      margin-bottom: 24px;
     }
+  }
 }
+
+@include media(335px) {
+  .container {
+    max-width: 335px;
+  }
+  .site__search {
+    padding: 36px 0 16px;
+    &-icon {
+      width: 20px;
+      height: 20px;
+      left: 16px;
+    }
+    &-btn {
+      right: 7px;
+      padding: 12.5px 14px 12.5px 18px;
+      font-size: 14px;
+    }
+    input {
+      padding: 18px 98px 17px 45px;
+      font-size: 13px;
+      line-height: 25px;
+    }
+  }
+}
+
+
+@include media(620px) {
+    .container {
+      max-width: 620px;
+    }
+    .site__search {
+      .input-err {
+        top: 120%;
+        left: 10px;
+        transform: translateY(0);
+        margin-bottom: 24px;
+      }
+    }
+  }

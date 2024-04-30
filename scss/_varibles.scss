@@ -1,9 +1,14 @@
 $white: #FFFFFF;
+$button: #0079FF;
+$error:#F74646;
 
 :root{
     --html-bg: #F6F8FF;
     --logo: #222731;
     --site-btn: #697C9A;
+    --site-input-pr: #4B6A9B;
+    --site-input: #222731;
+    --element: #FEFEFE;
 
     --site-btn-icon: url("../images/svg/moon.svg") center/contain no-repeat;
 }
@@ -12,6 +17,9 @@ $white: #FFFFFF;
     --html-bg: #141D2F;
     --logo: $white;
     --site-btn: $white;
+    --site-input: $white;
+    --site-input-pr: $white;
+    --element: #1E2A47;
 
     --site-btn-icon: url("../images/svg/sun.svg") center/contain no-repeat;
 }

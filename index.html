@@ -1,37 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GitHub user</title>
-    <link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
     <main>
-        <div class="site__nav">
-            <div class="container">
-                <a href="./index.html" class="site__nav-logo">devfinder</a>
+      <div class="site__nav">
+        <div class="container">
+          <a href="./index.html" class="site__nav-logo">devfinder</a>
 
-                <button class="site__nav-btn">DARK <span class="site__nav-btn-span"></span></button>
-            </div>
+          <button class="site__nav-btn">
+            DARK <span class="site__nav-btn-span"></span>
+          </button>
         </div>
+      </div>
 
-        <div class="site__search">
-            <div class="container">
-                <form class="site__search-form">
-                    <input type="text" placeholder="Search GitHub username…">
-                </form>
-            </div>
+      <div class="site__search">
+        <div class="container">
+          <form class="site__search-form">
+            <input type="text" placeholder="Search GitHub username…" />
+            <div class="site__search-icon"></div>
+            <button class="site__search-btn">Search</button>
+
+            <p class="input-err">No results</p>
+          </form>
         </div>
+      </div>
+
+      <div class="site__user">
+        <div class="container">
+          <div class="card">
+            <div class="site__user-avatar">
+              <img src="https://picsum.photos/117" alt="site__user-avatar" />
+            </div>
+            <div class="site__user-info">
+              <div class="site__user-info-hero">
+                <!-- <div class="site__user-avatar">
+                                  <img src="https://picsum.photos/117" alt="site__user-avatar">
+                              </div> -->
+                <div class="site__user-info-hero-user">
+                  <div class="w">
+                    <h2 class="user__name">The Octocat</h2>
+                    <p class="user__created_at">Joined 25 Jan 2011</p>
+                  </div>
+                  <p class="user__login">@octocat</p>
+                </div>
+              </div>
+
+              <div class="site__user-info-subscription">
+                <ul>
+                  <li class="subs-title">Repos</li>
+                  <li class="subs-num" id="user-repos">123</li>
+                </ul>
+                <ul>
+                  <li class="subs-title">Followers</li>
+                  <li class="subs-num" id="user-followers">123</li>
+                </ul>
+                <ul>
+                  <li class="subs-title">Following</li>
+                  <li class="subs-num" id="user-following">123</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
-
-
-
-
-
-
-
     <script src="./javascript/app.js"></script>
-</body>
+  </body>
 </html>
