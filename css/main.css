@@ -35,16 +35,22 @@ button {
   --site-input-pr: #4B6A9B;
   --site-input: #222731;
   --element: #FEFEFE;
+  --user-name: #2B3442;
+  --user-created: #697C9A;
+  --user-sub: #F6F8FF;
   --site-btn-icon: url("../images/svg/moon.svg") center/contain no-repeat;
 }
 
 .dark {
   --html-bg: #141D2F;
-  --logo: $white;
-  --site-btn: $white;
-  --site-input: $white;
-  --site-input-pr: $white;
+  --logo: #FFFFFF;
+  --site-btn: #FFFFFF;
+  --site-input: #FFFFFF;
+  --site-input-pr: #FFFFFF;
   --element: #1E2A47;
+  --user-name: #FFFFFF;
+  --user-created: #FFFFFF;
+  --user-sub: #141D2F;
   --site-btn-icon: url("../images/svg/sun.svg") center/contain no-repeat;
 }
 
@@ -188,6 +194,96 @@ main {
 
 .site__user .card {
   padding: 48px;
+  background: var(--element);
+  border-radius: 6px;
+  display: flex;
+  align-items: start;
+  gap: 37px;
+}
+.site__user-avatar {
+  display: flex;
+  width: 117px;
+  height: 117px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+.site__user-avatar img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.site__user-info {
+  width: 100%;
+}
+.site__user-info-hero {
+  display: flex;
+  gap: 41px;
+  align-items: center;
+}
+.site__user-info-hero .site__user-avatar {
+  display: none;
+}
+.site__user-info-hero-user {
+  display: flex;
+  flex-direction: column;
+}
+.site__user-info-hero-user .w {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.site__user-info-hero-user .w .user__name {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.5;
+  font-family: "Space Mono", monospace;
+  color: var(--user-name);
+}
+.site__user-info-hero-user .w .user__created_at {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.5;
+  font-family: "Space Mono", monospace;
+  color: var(--user-created);
+}
+.site__user-info-hero-user .user__login {
+  padding-top: 4px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Space Mono", monospace;
+  color: #0079FF;
+}
+.site__user-info-hero-user .user__bio {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.6;
+  font-family: "Space Mono", monospace;
+  color: var(--site-input-pr);
+  text-align: justify;
+  padding-top: 20px;
+}
+.site__user-info-subscription {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: var(--user-sub);
+  margin: 32px 0 37px;
+  padding: 15px 32px 17px 32px;
+  border-radius: 6px;
+}
+.site__user-info-subscription ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+.site__user-info-subscription ul .subs-title {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.5;
+  font-family: "Space Mono", monospace;
+  color: var(--site-input-pr);
 }
 
 @media (max-width: 575px) {

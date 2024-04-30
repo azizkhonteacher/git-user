@@ -9,17 +9,23 @@ $error:#F74646;
     --site-input-pr: #4B6A9B;
     --site-input: #222731;
     --element: #FEFEFE;
+    --user-name: #2B3442;
+    --user-created: #697C9A;
+    --user-sub: #F6F8FF;
 
     --site-btn-icon: url("../images/svg/moon.svg") center/contain no-repeat;
 }
 
 .dark{
     --html-bg: #141D2F;
-    --logo: $white;
-    --site-btn: $white;
-    --site-input: $white;
-    --site-input-pr: $white;
+    --logo: #FFFFFF;
+    --site-btn: #FFFFFF;
+    --site-input: #FFFFFF;
+    --site-input-pr: #FFFFFF;
     --element: #1E2A47;
+    --user-name: #FFFFFF;
+    --user-created: #FFFFFF;
+    --user-sub: #141D2F;
 
     --site-btn-icon: url("../images/svg/sun.svg") center/contain no-repeat;
 }
