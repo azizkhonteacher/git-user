@@ -1,0 +1,17 @@
+$white: #FFFFFF;
+
+:root{
+    --html-bg: #F6F8FF;
+    --logo: #222731;
+    --site-btn: #697C9A;
+
+    --site-btn-icon: url("../images/svg/moon.svg") center/contain no-repeat;
+}
+
+.dark{
+    --html-bg: #141D2F;
+    --logo: $white;
+    --site-btn: $white;
+
+    --site-btn-icon: url("../images/svg/sun.svg") center/contain no-repeat;
+}

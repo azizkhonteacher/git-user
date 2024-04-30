@@ -1,0 +1,12 @@
+@mixin font($fw, $fz, $lh: 1.5) {
+  font-weight: $fw;
+  font-size: $fz + px;
+  line-height: $lh;
+  font-family: "Space Mono", monospace;
+}
+
+@mixin media($md){
+  @media (max-width: $md) {
+    @content;
+  }
+}
