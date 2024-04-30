@@ -39,6 +39,10 @@ button {
   --user-created: #697C9A;
   --user-sub: #F6F8FF;
   --site-btn-icon: url("../images/svg/moon.svg") center/contain no-repeat;
+  --location: url("../images/svg/location.svg") center/contain no-repeat;
+  --url: url("../images/svg/url.svg") center/contain no-repeat;
+  --twitter: url("../images/svg/twitter.svg") center/contain no-repeat;
+  --office: url("../images/svg/office-building.svg") center/contain no-repeat;
 }
 
 .dark {
@@ -52,6 +56,10 @@ button {
   --user-created: #FFFFFF;
   --user-sub: #141D2F;
   --site-btn-icon: url("../images/svg/sun.svg") center/contain no-repeat;
+  --location: url("../images/svg/location-dark.svg") center/contain no-repeat;
+  --url: url("../images/svg/url-dark.svg") center/contain no-repeat;
+  --twitter: url("../images/svg/twitter-dark.svg") center/contain no-repeat;
+  --office: url("../images/svg/office-building-dark.svg") center/contain no-repeat;
 }
 
 html {
@@ -62,6 +70,7 @@ main {
   display: flex;
   flex-direction: column;
   padding-top: 60px;
+  margin-bottom: 50px;
 }
 
 .site__nav .container {
@@ -256,7 +265,7 @@ main {
   font-family: "Space Mono", monospace;
   color: #0079FF;
 }
-.site__user-info-hero-user .user__bio {
+.site__user-info .user__bio {
   font-weight: 400;
   font-size: 15px;
   line-height: 1.6;
@@ -285,6 +294,57 @@ main {
   font-family: "Space Mono", monospace;
   color: var(--site-input-pr);
 }
+.site__user-info-subscription ul .subs-num {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.5;
+  font-family: "Space Mono", monospace;
+  color: var(--user-name);
+}
+.site__user-info-links {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 30px;
+}
+.site__user-info-links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+.site__user-info-links ul li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.site__user-info-links ul li .link-icon {
+  display: flex;
+  width: 20px;
+  height: 20px;
+}
+.site__user-info-links ul li .location {
+  background: var(--location);
+}
+.site__user-info-links ul li .url {
+  background: var(--url);
+}
+.site__user-info-links ul li .twitter {
+  background: var(--twitter);
+}
+.site__user-info-links ul li .office {
+  background: var(--office);
+}
+.site__user-info-links ul li .link-text {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.5;
+  font-family: "Space Mono", monospace;
+  color: var(--site-input-pr);
+}
+.site__user-info-links ul li a:hover {
+  text-decoration: underline;
+}
 
 @media (max-width: 575px) {
   .container {
@@ -297,7 +357,7 @@ main {
     margin-bottom: 24px;
   }
 }
-@media (max-width: 335px) {
+@media (max-width: 500px) {
   .container {
     max-width: 335px;
   }
@@ -329,5 +389,118 @@ main {
     left: 10px;
     transform: translateY(0);
     margin-bottom: 24px;
+  }
+}
+@media (max-width: 700px) {
+  .container {
+    max-width: 700px;
+  }
+  .site__user .card {
+    padding: 40px;
+  }
+  .site__user-avatar {
+    display: none;
+  }
+  .site__user-info-hero .site__user-avatar {
+    display: flex;
+  }
+  .site__user-info-hero-user .w {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+  .site__user-info-subscription {
+    margin: 32px 0 30px;
+    width: 100%;
+  }
+}
+@media (max-width: 530px) {
+  .container {
+    max-width: 530px;
+  }
+  .site__user-info-links {
+    flex-direction: column;
+  }
+}
+@media (max-width: 455px) {
+  .container {
+    max-width: 455px;
+  }
+  .site__user-avatar {
+    width: 100px;
+    height: 100px;
+  }
+  .site__user-info-hero-user .w .user__name {
+    font-size: 20px;
+  }
+  .site__user-info-subscription {
+    padding: 18px 14px 19px 15px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+  }
+  .site__user-info-subscription ul {
+    align-items: center;
+  }
+}
+@media (max-width: 380px) {
+  .container {
+    min-width: 380px;
+  }
+  .subs-title {
+    font-size: 12px;
+  }
+  .subs-num {
+    font-size: 18px;
+  }
+}
+@media (max-width: 331px) {
+  .container {
+    min-width: 330px;
+  }
+  .site__user .card {
+    padding: 32px 24px 48px;
+  }
+  .site__user-info-hero {
+    gap: 19px;
+  }
+  .site__user-info-hero .site__user-avatar {
+    width: 70px;
+    height: 70px;
+  }
+  .site__user-info-hero-user .user__name {
+    font-size: 16px;
+  }
+  .site__user-info-hero-user .user__created_at {
+    font-size: 13px;
+  }
+  .site__user-info-hero-user .user__login {
+    font-size: 13px;
+  }
+  .site__user-info-hero .user__bio {
+    font-size: 13px;
+    width: 100%;
+    padding-top: 33px;
+  }
+  .site__user-info-hero-subscription {
+    margin: 23px 0 24px;
+  }
+  .site__user-info-hero-subscription ul {
+    gap: 0;
+  }
+  .site__user-info-hero-subscription ul .subs-title {
+    font-size: 11px;
+  }
+  .site__user-info-hero-subscription ul .subs-num {
+    font-size: 16px;
+  }
+  .site__user-info-hero-links {
+    gap: 16px;
+  }
+  .site__user-info-hero-links ul {
+    gap: 16px;
+  }
+  .site__user-info-hero-links ul .link-text {
+    font-size: 13px;
   }
 }/*# sourceMappingURL=main.css.map */

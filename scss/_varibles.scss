@@ -14,6 +14,10 @@ $error:#F74646;
     --user-sub: #F6F8FF;
 
     --site-btn-icon: url("../images/svg/moon.svg") center/contain no-repeat;
+    --location: url("../images/svg/location.svg") center/contain no-repeat;
+    --url: url("../images/svg/url.svg") center/contain no-repeat;
+    --twitter: url("../images/svg/twitter.svg") center/contain no-repeat;
+    --office: url("../images/svg/office-building.svg") center/contain no-repeat;
 }
 
 .dark{
@@ -28,4 +32,8 @@ $error:#F74646;
     --user-sub: #141D2F;
 
     --site-btn-icon: url("../images/svg/sun.svg") center/contain no-repeat;
+    --location: url("../images/svg/location-dark.svg") center/contain no-repeat;
+    --url: url("../images/svg/url-dark.svg") center/contain no-repeat;
+    --twitter: url("../images/svg/twitter-dark.svg") center/contain no-repeat;
+    --office: url("../images/svg/office-building-dark.svg") center/contain no-repeat;
 }

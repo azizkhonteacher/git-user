@@ -6,6 +6,7 @@ main {
   display: flex;
   flex-direction: column;
   padding-top: 60px;
+  margin-bottom: 50px;
 }
 
 .site__nav {
@@ -185,14 +186,14 @@ main {
           @include font(400, 16);
           color: $button;
         }
-        .user__bio {
-          @include font(400, 15, 1.6);
-          color: var(--site-input-pr);
-          text-align: justify;
-          padding-top: 20px;
-        }
       }
     }
+    .user__bio {
+        @include font(400, 15, 1.6);
+        color: var(--site-input-pr);
+        text-align: justify;
+        padding-top: 20px;
+      }
 
     &-subscription {
       display: grid;
@@ -211,7 +212,53 @@ main {
           @include font(400, 13);
           color: var(--site-input-pr);
         }
+        .subs-num{
+            @include font(700,22);
+            color: var(--user-name);
+        }
       }
+    }
+
+    &-links{
+        width: 100%;
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        gap: 30px;
+        ul{
+            display: flex;
+            flex-direction: column;
+            gap: 19px;
+            li{
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                .link-icon{
+                    display: flex;
+                    width: 20px;
+                    height: 20px;
+                }
+                .location{
+                    background: var(--location);
+                }
+                .url{
+                    background: var(--url);
+                }
+                .twitter{
+                    background: var(--twitter);
+                }
+                .office{
+                    background: var(--office);
+                }
+                .link-text{
+                    @include font(400, 15);
+                    color: var(--site-input-pr);
+                }
+                a:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
     }
   }
 }
