@@ -230,7 +230,6 @@ main {
   width: 100%;
 }
 .site__user-info-hero {
-  display: flex;
   gap: 41px;
   align-items: center;
 }
@@ -243,8 +242,8 @@ main {
 }
 .site__user-info-hero-user .w {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 .site__user-info-hero-user .w .user__name {
   font-weight: 700;
@@ -349,6 +348,10 @@ main {
   text-decoration: underline;
 }
 
+.site__user-avatar {
+  background-color: red;
+}
+
 @media (max-width: 575px) {
   .container {
     max-width: 575px;
@@ -403,6 +406,9 @@ main {
   }
   .site__user-avatar {
     display: none;
+  }
+  .site__user-info-hero {
+    display: flex;
   }
   .site__user-info-hero .site__user-avatar {
     display: flex;

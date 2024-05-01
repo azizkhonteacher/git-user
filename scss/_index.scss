@@ -162,7 +162,6 @@ main {
       .site__user-avatar {
         display: none;
       }
-      display: flex;
       gap: 41px;
       align-items: center;
 
@@ -171,8 +170,8 @@ main {
         flex-direction: column;
         .w {
           display: flex;
-          align-items: center;
           justify-content: space-between;
+          align-items: center;
 
           .user__name {
             @include font(700, 26);
@@ -263,4 +262,8 @@ main {
       }
     }
   }
+}
+
+.site__user-avatar{
+  background-color: red;
 }
