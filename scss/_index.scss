@@ -29,11 +29,13 @@ main {
     justify-content: space-between;
     align-items: center;
     gap: 16px;
-
-    color: var(--site-btn);
-    @include font(700, 13);
-    text-transform: uppercase;
-    letter-spacing: 2.5px;
+    p {
+      display: flex;
+      color: var(--site-btn);
+      @include font(700, 13);
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+    }
 
     span {
       display: flex;
@@ -189,11 +191,11 @@ main {
       }
     }
     .user__bio {
-        @include font(400, 15, 1.6);
-        color: var(--site-input-pr);
-        text-align: justify;
-        padding-top: 20px;
-      }
+      @include font(400, 15, 1.6);
+      color: var(--site-input-pr);
+      text-align: justify;
+      padding-top: 20px;
+    }
 
     &-subscription {
       display: grid;
@@ -212,53 +214,53 @@ main {
           @include font(400, 13);
           color: var(--site-input-pr);
         }
-        .subs-num{
-            @include font(700,22);
-            color: var(--user-name);
+        .subs-num {
+          @include font(700, 22);
+          color: var(--user-name);
         }
       }
     }
 
-    &-links{
-        width: 100%;
+    &-links {
+      width: 100%;
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
+      gap: 30px;
+      ul {
         display: flex;
-        align-items: start;
-        justify-content: space-between;
-        gap: 30px;
-        ul{
+        flex-direction: column;
+        gap: 19px;
+        li {
+          display: flex;
+          align-items: center;
+          gap: 16px;
+          .link-icon {
             display: flex;
-            flex-direction: column;
-            gap: 19px;
-            li{
-                display: flex;
-                align-items: center;
-                gap: 16px;
-                .link-icon{
-                    display: flex;
-                    width: 20px;
-                    height: 20px;
-                }
-                .location{
-                    background: var(--location);
-                }
-                .url{
-                    background: var(--url);
-                }
-                .twitter{
-                    background: var(--twitter);
-                }
-                .office{
-                    background: var(--office);
-                }
-                .link-text{
-                    @include font(400, 15);
-                    color: var(--site-input-pr);
-                }
-                a:hover{
-                    text-decoration: underline;
-                }
-            }
+            width: 20px;
+            height: 20px;
+          }
+          .location {
+            background: var(--location);
+          }
+          .url {
+            background: var(--url);
+          }
+          .twitter {
+            background: var(--twitter);
+          }
+          .office {
+            background: var(--office);
+          }
+          .link-text {
+            @include font(400, 15);
+            color: var(--site-input-pr);
+          }
+          a:hover {
+            text-decoration: underline;
+          }
         }
+      }
     }
   }
 }

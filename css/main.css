@@ -95,6 +95,9 @@ main {
   justify-content: space-between;
   align-items: center;
   gap: 16px;
+}
+.site__nav-btn p {
+  display: flex;
   color: var(--site-btn);
   font-weight: 700;
   font-size: 13px;
