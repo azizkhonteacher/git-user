@@ -121,7 +121,7 @@ main {
     transform: translateY(-50%);
   }
   .input-err {
-    display: flex;
+    // display: flex;
     @include font(700, 15);
     color: $error;
     position: absolute;
@@ -266,4 +266,8 @@ main {
 
 .site__user-avatar{
   background-color: red;
+}
+
+.loop{
+  display: flex !important;
 }

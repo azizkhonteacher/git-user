@@ -53,7 +53,9 @@ function userHTML(data) {
           <p class="user__login">@${data.login}</p>
         </div>
       </div>
-      <p class="user__bio">${data.bio = "null" ? "This profile has no bio" : data.bio}</p>
+      <p class="user__bio">${(data.bio = "null"
+        ? "This profile has no bio"
+        : data.bio)}</p>
 
       <div class="site__user-info-subscription">
         <ul>
@@ -79,25 +81,36 @@ function userHTML(data) {
           <li>
             <span class="link-icon url"></span>
             <a href="#" class="link-text" id="url"
-              >${data.blog = "null" ? "Not Available" : data.blog}</a
+              >${(data.blog = "null" ? "Not Available" : data.blog)}</a
             >
           </li>
         </ul>
         <ul>
           <li>
             <span class="link-icon twitter"></span>
-            <a href="#" class="link-text" id="twitter">${data.twitter_username = "null" ? "Not Available" : data.twitter_username}</a>
+            <a href="#" class="link-text" id="twitter">${(data.twitter_username =
+              "null" ? "Not Available" : data.twitter_username)}</a>
           </li>
           <li>
             <span class="link-icon office"></span>
-            <a href="#" class="link-text" id="office">${data.company = "null" ? "Not Available" : data.company}</a>
+            <a href="#" class="link-text" id="office">${(data.company = "null"
+              ? "Not Available"
+              : data.company)}</a>
           </li>
         </ul>
       </div>
     </div>
   </div>
 </div>
-  `
+  `;
+}
+function userError(){
+  const userErr = document.querySelector(".input-err")
+  userErr.classList.add("loop")
+
+  setTimeout(() => {
+    userErr.classList.remove("loop")
+  }, 2000)
 }
 
 // defolt OCTOCAT
@@ -106,3 +119,17 @@ fetch("https://api.github.com/users/azizkhonteacher")
   .then((res) => res.json())
   .then((data) => userHTML(data))
   .catch((err) => console.log(err));
+
+// INPUT qiymatini olamiz
+const searchForm = document.querySelector(".site__search-form");
+const searchFormInput = document.querySelector(".site__search-form input");
+
+searchForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  fetch(`https://api.github.com/users/${searchFormInput.value}`)
+  .then((res) => res.json())
+  .then((data) => userHTML(data))
+  .catch(() => userError);
+
+  searchFormInput.value = ""
+});

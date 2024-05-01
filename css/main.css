@@ -191,7 +191,6 @@ main {
   transform: translateY(-50%);
 }
 .site__search .input-err {
-  display: flex;
   font-weight: 700;
   font-size: 15px;
   line-height: 1.5;
@@ -350,6 +349,10 @@ main {
 
 .site__user-avatar {
   background-color: red;
+}
+
+.loop {
+  display: flex !important;
 }
 
 @media (max-width: 575px) {
